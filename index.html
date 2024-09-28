@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale-1.0">
+    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="envelope-wrapper flap">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>Dear Beloved Bybu.</strong>
+                        <p>
+                          Selamatt ulang tahun sayangku cintaa, cieeee yang udah 18 tahun sekarangg udah makin kecill yaa sekarang.
+                          Senenggg bangett bisaaa ngucapinn kaya ginii walaupun masihh berantakan.
+                          Semogaaa hubungan kita makin langgeng yaa kedepannya pokonya semua masalah akan kita lalui bersamaaa.
+                                                            From beloved byu
+                        </p>
+                    </div>
+                </div>
+                <div class="heart"></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+</body>
+</html>
